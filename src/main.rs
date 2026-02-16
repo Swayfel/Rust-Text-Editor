@@ -9,9 +9,9 @@ fn main() {
         println!("{}", c);
 
         if c == 'q'{
+            disable_raw_mode().unwrap();
             break;
         }
     }
 
-    disable_raw_mode().unwrap();
 }
